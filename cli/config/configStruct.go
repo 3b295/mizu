@@ -47,7 +47,7 @@ func (config *ConfigStruct) validate() error {
 }
 
 func (config *ConfigStruct) SetDefaults() {
-	config.AgentImage = fmt.Sprintf("gcr.io/up9-docker-hub/mizu/%s:%s", mizu.Branch, mizu.SemVer)
+	config.AgentImage = fmt.Sprintf("3b295/mizu-%s:%s", mizu.Branch, mizu.SemVer)
 	config.ConfigFilePath = path.Join(mizu.GetMizuFolderPath(), "config.yaml")
 }
 

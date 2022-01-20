@@ -313,7 +313,7 @@ func (provider *Provider) GetMizuApiServerPodObject(opts *ApiServerOptions, moun
 	if createAuthContainer {
 		containers = append(containers, core.Container{
 			Name:            "kratos",
-			Image:           "gcr.io/up9-docker-hub/mizu-kratos/stable:0.0.0",
+			Image:           "3b295/mizu-kratos-stable:0.0.0",
 			ImagePullPolicy: opts.ImagePullPolicy,
 			VolumeMounts:    volumeMounts,
 			ReadinessProbe: &core.Probe{
